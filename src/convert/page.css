@@ -1,0 +1,235 @@
+/* Global styling */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #1c1c2e;
+  color: #ffffff;
+}
+
+/* COLOR BLIND MODE */
+body.color-blind {
+  background-color: #ffffe0;
+  color: #000080;
+}
+
+/* Main container styling */
+.App {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 6rem;
+  width: 97%;
+  height: 80%;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode container */
+body.dark-mode .App {
+  background-color: #2c2c3c;
+  color: #ffffff;
+}
+
+/* Color blind mode container */
+body.color-blind .App {
+  background-color: #fffff0;
+  color: #000080;
+}
+
+/* Headings */
+h1 {
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+body.dark-mode h1 {
+  color: #ffffff;
+}
+
+body.color-blind h1 {
+  color: #000080;
+}
+
+/* Textarea styling */
+textarea {
+  width: 50%;
+  min-height: 150px;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #dddddd;
+  border-radius: 8px;
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+body.dark-mode textarea {
+  background-color: #444;
+  color: #fff;
+  border: 2px solid #666;
+}
+
+body.color-blind textarea {
+  background-color: #f9f9c0;
+  color: #000080;
+  border-color: #000080;
+}
+
+/* File input styling */
+input[type="file"] {
+  margin-top: 10px;
+}
+
+/* Select element styling */
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #dddddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+body.dark-mode select {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #666;
+}
+
+body.color-blind select {
+  background-color: #fffacd;
+  color: #000080;
+  border-color: #000080;
+}
+
+/* Button styling */
+button {
+  background-color: #5563DE;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #444ccc;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+body.dark-mode button {
+  background-color: #007DFC;
+}
+
+body.dark-mode button:hover {
+  background-color: #005fcc;
+}
+
+body.color-blind button {
+  background-color: #000080;
+  color: #fff;
+}
+
+body.color-blind button:hover {
+  background-color: #333399;
+}
+
+/* Audio player styling */
+audio {
+  margin-top: 20px;
+  width: 60%;
+}
+
+/* Label styling */
+label {
+  font-size: 16px;
+  color: #333333;
+}
+
+body.dark-mode label {
+  color: #ffffff;
+}
+
+body.color-blind label {
+  color: #000080;
+}
+
+.App {
+  text-align: center;
+}
+
+.header1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.convert-button {
+  background-color: #5563DE;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Dark mode overlay */
+body.dark-mode .spinner-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+body.color-blind .spinner-overlay {
+  background: rgba(255, 255, 150, 0.6);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

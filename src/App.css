@@ -1,0 +1,72 @@
+:root {
+  --bg: #f9f9f9;
+  --text: #c8b9b9;
+  --card-bg: #fff;
+  --btn-bg: #0066ff;
+  --base-font-size: 16px;  /* New base font size variable */
+}
+
+body.dark-mode {
+  --bg: #1d1919;
+  --text: #eee;
+  --card-bg: #433d3d;
+  --btn-bg: #3399ff;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: var(--base-font-size);  /* Use the variable here */
+}
+
+/* Example usage for content elements */
+h1 {
+  font-size: 2rem; /* 2 * --base-font-size */
+}
+
+p, label, button {
+  font-size: 1rem;
+}
+
+/* Other app styles */
+.card {
+  background-color: var(--card-bg);
+  color: var(--text);
+}
+
+.button {
+  background-color: var(--btn-bg);
+  color: #fff;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1rem;
+}
+/* App.css */
+
+/* Define a default value for the font-size variable */
+:root {
+  --base-font-size: 16px;
+}
+
+/* Apply the variable to the html element so rem units will use it */
+html {
+  font-size: var(--base-font-size);
+}
+
+/* Optionally, ensure your body and other text elements use relative units */
+body {
+  font-size: 1rem;
+}
+
+/* Example styling for headers */
+.header1 {
+  font-size: 2rem;
+}
+

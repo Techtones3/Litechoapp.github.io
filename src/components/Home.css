@@ -1,0 +1,55 @@
+/* ===== Home Screen Styles (Light Mode) ===== */
+.home-screen {
+  background-color: #f9f9f9; /* Light background */
+  color: #333333;           /* Dark text */
+  min-height: 100vh;
+  padding-top: 64px;        /* Adjust if your Navbar is fixed */
+}
+
+/* ===== Home Screen Dark Mode Override ===== */
+/* Matches Sidebar Dark Mode Colors */
+body.dark-mode .home-screen {
+  background-color: #1e1e2f; /* Same dark blue-gray as sidebar */
+  color: #ffffff;           /* White text */
+}
+
+/* ===== Home Screen Color Blind Mode Override ===== */
+/* Matches Sidebar Color Blind Mode Colors */
+body.color-blind .home-screen,
+body.colorblind-mode .home-screen {
+  background-color: #ffffe0; /* Soft yellow background */
+  color: #000080;            /* Dark blue text */
+}
+
+/* ===== Additional Home Container & Content Styling ===== */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: calc(100vh - 64px);
+}
+
+.home-content {
+  background-color: var(--card-bg, #ffffff); /* Can use a variable or fallback to white */
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* ===== Fade In Up Animation ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

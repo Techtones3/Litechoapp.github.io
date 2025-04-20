@@ -1,0 +1,23 @@
+/* F:\Project\Project\react-frontend\src\components\InstructionsAnimation.css */
+
+.instructions-container {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .instruction-text {
+    font-size: 1.5rem;
+    color: var(--text); /* Use CSS variable for consistent theming */
+    opacity: 0;
+    animation: fadeInOut 3s ease-in-out infinite;
+  }
+  
+  /* Keyframes to animate fade in, hold, then fade out */
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(20px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+  }
+  

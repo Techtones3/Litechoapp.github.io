@@ -1,0 +1,179 @@
+/* ========== Root Variables for Light Mode ========== */
+:root {
+  --navbar-bg: #6da9e6;
+  --navbar-text: #222;
+  --brand-color: #ffffff;
+  --toggle-hover-bg: rgba(0, 0, 0, 0.1);
+  --navbar-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== Navbar Base (Light Mode) ========== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 250px; /* if your sidebar is 250px wide */
+  right: 0;
+  height: 64px; /* adjust as needed */
+  z-index: 999;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 0 2rem;
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text);
+  box-shadow: var(--navbar-shadow);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ========== Left: Brand/Title ========== */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-name {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--brand-color);
+  margin: 0;
+}
+
+/* ========== Right: Buttons & Avatar ========== */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ========== Toggle Buttons ========== */
+.toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1.2rem;
+  padding: 6px;
+  border-radius: 6px;
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.toggle-button:hover {
+  color: #fff;
+  background-color: var(--toggle-hover-bg);
+  transform: scale(1.05);
+}
+
+/* ========== Avatar ========== */
+.navbar-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.navbar-avatar:hover {
+  transform: scale(1.05);
+  border-color: #0044cc;
+}
+
+/* ========== Translate Wrapper ========== */
+.translate-wrapper {
+  position: relative;
+}
+
+.translate-wrapper .visible {
+  display: block;
+  position: absolute;
+  top: 50px; /* place right below the button */
+  left: 0;
+  background: #fff;
+  z-index: 1000;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  min-width: 180px;
+}
+
+.translate-wrapper .hidden {
+  display: none;
+}
+
+/* ========== Dark Mode Overrides ========== */
+body.dark-mode {
+  --navbar-bg: #1f1f1f;
+  --navbar-text: #ffffff;
+  --brand-color: #ffffff;
+  --toggle-hover-bg: rgba(255, 255, 255, 0.1);
+  --navbar-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .navbar {
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text);
+}
+
+body.dark-mode .toggle-button:hover {
+  background-color: var(--toggle-hover-bg);
+  color: #87cefa;
+}
+
+body.dark-mode .navbar-avatar {
+  border-color: #87cefa;
+}
+
+/* ========== Colorblind Mode Overrides ========== */
+body.colorblind-mode {
+  /* Alternatively, you may set a different palette here */
+  filter: grayscale(100%) contrast(120%);
+}
+
+body.colorblind-mode .navbar {
+  background-color: #000099;
+  color: #ffffff;
+}
+
+/* ========== Shared Input Overrides for Dark/Colorblind ========== */
+body.dark-mode button,
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea,
+body.colorblind-mode button,
+body.colorblind-mode input,
+body.colorblind-mode select,
+body.colorblind-mode textarea {
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid #555;
+}
+
+/* ========== Responsive (Optional) ========== */
+@media (max-width: 768px) {
+  .navbar {
+    left: 0; /* remove sidebar offset on mobile */
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .navbar-left,
+  .navbar-right {
+    gap: 0.6rem;
+  }
+  
+  .brand-name {
+    font-size: 1.2rem;
+  }
+  
+  .navbar-avatar {
+    width: 36px;
+    height: 36px;
+  }
+}

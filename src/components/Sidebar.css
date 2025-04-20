@@ -1,0 +1,265 @@
+/* Dark Mode Sidebar Hover */
+body.dark-mode .sidebar-header:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Color Blind Mode Sidebar Hover */
+body.color-blind .sidebar-header:hover {
+  background-color: #dcdcdc;
+}
+
+/* Main Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #6fa1d3;
+  color: #ecf0f1;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Override */
+body.dark-mode .sidebar {
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+/* Color Blind Mode Override */
+body.color-blind .sidebar {
+  background-color: #ffffe0;
+  color: #000080;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar-header:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+
+.sidebar-header img.register-logo2 {
+  width: 25px;
+  height: 25px;
+}
+
+.sidebar-header h2 {
+  font-size: 1.6rem;
+  color: inherit;
+  margin: 0;
+}
+
+/* Sidebar Title */
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Nav List */
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Active & Hover Links */
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active-link {
+  background-color: #34495e;
+  transform: translateX(5px);
+}
+
+body.color-blind .sidebar nav ul li a {
+  color: #000080;
+}
+
+body.color-blind .sidebar nav ul li a:hover,
+body.color-blind .sidebar nav ul li a.active-link {
+  background-color: #aaccff;
+}
+
+/* Audio History Section */
+.audio-history {
+  margin-top: 30px;
+}
+
+.audio-history h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.audio-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.audio-history li {
+  margin-bottom: 10px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Delete Icon */
+.delete-button {
+  color: red;
+  float: right;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  position: relative;
+  top: 30px;
+  transition: transform 0.3s ease;
+}
+
+.delete-button:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Audio Link Styling */
+.audio-history li a {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.audio-history li a:hover {
+  background-color: #34495e;
+  color: #ecf0f1;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+body.color-blind .audio-history li a {
+  color: #000080;
+}
+
+body.color-blind .audio-history li a:hover {
+  background-color: #aaccff;
+  color: #000;
+}
+
+/* General Button Styling (for any generic button not in footer) */
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e74c3c;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+body.color-blind button {
+  background-color: #000080;
+  color: #fff;
+}
+
+body.color-blind button:hover {
+  background-color: #333399;
+}
+
+/* Sidebar Footer Styling */
+.sidebar-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Footer Buttons */
+.sidebar-footer button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Logout Button Styling */
+.sidebar-footer button.logout {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.sidebar-footer button.logout:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Settings Button Styling */
+.sidebar-footer button.settings {
+  background-color: #6fa1d3;
+  color: #fff;
+}
+
+.sidebar-footer button.settings:hover {
+  background-color: #5a8ac1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Color Blind Mode Overrides for Footer Buttons */
+body.color-blind .sidebar-footer button.logout,
+body.color-blind .sidebar-footer button.settings {
+  background-color: #000080;
+  color: #fff;
+}
+
+body.color-blind .sidebar-footer button.logout:hover,
+body.color-blind .sidebar-footer button.settings:hover {
+  background-color: #333399;
+}
+
+/* Fade In Animation for Audio History Items */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

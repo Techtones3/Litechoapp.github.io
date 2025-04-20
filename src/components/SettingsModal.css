@@ -1,0 +1,79 @@
+/* SettingsModal.css */
+
+/* -------------------------------
+   Base Variables and Styles
+---------------------------------*/
+:root {
+  /* Default color variables (light mode) */
+  --modal-bg: #fff;
+  --modal-text: #000;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+  --button-bg: #007BFF;
+  --button-text: #fff;
+}
+
+/* Modal overlay style */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content style */
+.modal-content {
+  background: var(--modal-bg);
+  color: var(--modal-text);
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+/* Modal buttons container */
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -------------------------------
+   Dark Mode (activated via nav bar toggle)
+---------------------------------*/
+/* Apply these styles when the "dark" class is on the body */
+body.dark {
+  --modal-bg: #2c2c2c;
+  --modal-text: #e4e4e4;
+  --overlay-bg: rgba(0, 0, 0, 0.8);
+  --button-bg: #0056b3;
+  --button-text: #fff;
+}
+
+/* -------------------------------
+   Color-Blind Mode (activated via nav bar toggle)
+---------------------------------*/
+/* Apply these styles when the "color-blind-mode" class is on the body */
+body.color-blind-mode {
+  --modal-bg: #f9f9f9;
+  --modal-text: #000;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+  --button-bg: #005a9c;
+  --button-text: #fff;
+}
+
+/* -------------------------------
+   Combined Dark Mode and Color-Blind Mode
+---------------------------------*/
+/* When both toggles are active */
+body.dark.color-blind-mode {
+  --modal-bg: #3a3a3a;
+  --modal-text: #f1f1f1;
+  --overlay-bg: rgba(0, 0, 0, 0.85);
+  --button-bg: #007acc;
+  --button-text: #fff;
+}
