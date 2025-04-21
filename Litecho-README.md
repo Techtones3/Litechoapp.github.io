@@ -23,7 +23,7 @@ The welcome screen guides you to begin converting files quickly.
 
 ## 📖 About Page
 
-![About](./screenshots/About.png)
+![About](/screenshots/About.png)
 
 Learn more about the mission of LitEcho, its accessibility features, and core functionalities.
 
@@ -150,5 +150,6 @@ Runs at: [http://localhost:3000](http://localhost:3000)
 
 **Raga Sri Lakshmi Kakarla**  
 **Mohammed Momin Khizar Uddin**
+
 **Mounika Narra**  
 **Deepthi Tanubuddi**
