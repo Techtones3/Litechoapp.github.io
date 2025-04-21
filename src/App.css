@@ -6,6 +6,7 @@
   --base-font-size: 16px;  /* New base font size variable */
 }
 
+
 body.dark-mode {
   --bg: #1d1919;
   --text: #eee;

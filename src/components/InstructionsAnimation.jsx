@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './InstructionsAnimation.css';
 
+
 const InstructionsAnimation = () => {
   // Define the list of instructions you want to display
   const instructions = [

@@ -5,6 +5,7 @@ import "./Sidebar.css";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { FiSettings } from "react-icons/fi";
 
+
 function Sidebar({ onOpenSettings }) {
   const [audioHistory, setAudioHistory] = useState([]);
   const [selectedFileType, setSelectedFileType] = useState("text");

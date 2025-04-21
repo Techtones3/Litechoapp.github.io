@@ -4,6 +4,7 @@ import "./SettingsModal.css";
 const SettingsModal = ({ isOpen, onClose, settings, onSave }) => {
   const [localSettings, setLocalSettings] = useState(settings);
 
+  
   useEffect(() => {
     // Sync local state when parent settings change.
     setLocalSettings(settings);

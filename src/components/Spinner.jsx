@@ -1,6 +1,7 @@
 // Spinner.jsx
 import React from 'react';
 
+
 export default function Spinner({
   size = 8,             // Tailwind size scale (e.g. 8 → 2rem)
   color = 'blue-500',   // Tailwind color

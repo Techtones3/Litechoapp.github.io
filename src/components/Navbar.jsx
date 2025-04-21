@@ -6,6 +6,7 @@ import { FaEye } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { BsVolumeUp } from "react-icons/bs";
 
+
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [colorblindMode, setColorblindMode] = useState(false);

@@ -32,6 +32,7 @@ function Register() {
   };
  
 
+  
   return (
     <div className="register-container">
       {/* Left side: image */}

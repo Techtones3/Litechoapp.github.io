@@ -7,6 +7,7 @@ import AppRoutes from "./routes/Routes";
 import SettingsModal from "./components/SettingsModal";
 import OnboardingTour from "./components/OnboardingTour";
 
+
 function App() {
   const [settingsModalOpen, setSettingsModalOpen] = useState(false);
   const [settings, setSettings] = useState({

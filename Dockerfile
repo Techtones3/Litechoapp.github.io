@@ -2,6 +2,7 @@ FROM python:3.11-slim-buster
 
 WORKDIR /app
 
+
 # Install system dependencies, including tesseract-ocr
 RUN apt-get update && apt-get install -y --no-install-recommends \
     tesseract-ocr \

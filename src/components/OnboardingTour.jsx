@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import Joyride from "react-joyride";
 
+
 const OnboardingTour = ({ run = true, onTourClose = () => {} }) => {
   useEffect(() => {
     console.log("OnboardingTour run prop:", run);
