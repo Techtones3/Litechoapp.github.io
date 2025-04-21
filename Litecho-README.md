@@ -23,7 +23,7 @@ The welcome screen guides you to begin converting files quickly.
 
 ## 📖 About Page
 
-![About](/screenshots/About.png)
+![About](/screenshots/about.png)
 
 Learn more about the mission of LitEcho, its accessibility features, and core functionalities.
 
