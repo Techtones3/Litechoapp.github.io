@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import api from "../utils/api";
 import "./register.css"; // <-- Import the CSS file
-
+//registration page
 function Register() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
